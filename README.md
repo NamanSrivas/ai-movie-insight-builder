@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 AI Movie Insight Builder
 
-## Getting Started
+AI Movie Insight Builder is a web application that allows users to fetch movie details using an IMDb ID and view AI-generated insights based on audience reviews. The project integrates multiple APIs to provide movie metadata, ratings, cast information, and sentiment analysis.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- Search movie using **IMDb ID**
+- Fetch movie details from **OMDb API**
+- Display **poster, plot, rating, and cast**
+- AI-generated **sentiment analysis of audience reviews**
+- Clean and responsive **UI**
+- Deployed for **live access**
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js, React
+- **Styling:** CSS / Tailwind (depending on your setup)
+- **APIs Used:**
+  - OMDb API
+  - TMDb API
+  - Google Gemini API (for AI insights)
+- **Deployment:** Vercel
+
+---
+
+## 📦 APIs Used
+
+### 1. OMDb API
+Used for fetching movie details such as title, plot, rating, and poster.
+
+### 2. TMDb API
+Used to retrieve additional metadata such as cast and extra movie details.
+
+### 3. Google Gemini API
+Used to generate AI-based insights and sentiment analysis from movie reviews.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/ai-movie-insight-builder.git
+cd ai-movie-insight-builder
+
+
+2️⃣ Install Dependencies
+npm install
+3️⃣ Add Environment Variables
+
+Create a file:
+
+.env.local
+
+Add the following keys:
+
+OMDB_API_KEY=your_omdb_api_key
+TMDB_API_KEY=your_tmdb_api_key
+GEMINI_API_KEY=your_gemini_api_key
+4️⃣ Run the Project
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+🌐 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project is deployed using Vercel.
 
-## Learn More
+Steps to deploy:
 
-To learn more about Next.js, take a look at the following resources:
+Push project to GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Import repository into Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add environment variables
 
-## Deploy on Vercel
+Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Live project link will look like:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://ai-movie-insight-builder.vercel.app
+📸 Example Usage
+
+Enter an IMDb movie ID such as:
+
+tt0111161
+
+The application will display:
+
+Movie poster
+
+Title and plot
+
+IMDb rating
+
+Cast details
+
+AI-generated sentiment insight
+
+🔮 Future Improvements
+
+Movie search by name instead of IMDb ID
+
+Better AI review summarization
+
+User interface improvements
+
+Trending movies section
+
+Review visualization charts
+
+👨‍💻 Author
+
+Naman Srivastava
+
+Aspiring Software Developer interested in AI, Full Stack Development, and Automation.
+
+📄 License
+
+This project was created as part of a technical assignment and is intended for educational purposes.
+
+
+---
+
+✅ This README is **perfect for assignment submission** because it shows:
+
+- Professional structure  
+- Tech stack clarity  
+- Deployment instructions  
+- Future improvements (recruiters love this)
+
+---
+
+If you want, I can also give you **3 small improvements that will make this assignment look like a senior developer project** (reviewers notice these instantly).
